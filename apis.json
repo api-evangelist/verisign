@@ -1,0 +1,87 @@
+{
+    "name": "Verisign",
+    "description": "Global leader in domain names and internet security.",
+    "image": "http:\/\/kinlane-productions.s3.amazonaws.com\/screen-capture-api\/1496-verisign.jpg",
+    "tags": [
+        "communications",
+        "domains",
+        "have api",
+        "isp",
+        "networks"
+    ],
+    "created": "2019-12-19",
+    "modified": "2019-12-19",
+    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/verisign\/master\/apis.json",
+    "specificationVersion": "0.14",
+    "apis": [
+        {
+            "name": "Verisign",
+            "description": null,
+            "image": "http:\/\/kinlane-productions.s3.amazonaws.com\/screen-capture-api\/1496-verisign.jpg",
+            "humanURL": "http:\/\/domaincountdown.verisignlabs.com\/public\/apidocs.html",
+            "baseURL": "",
+            "tags": [],
+            "properties": [
+                {
+                    "type": "x-openapi",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/verisign-openapi.json"
+                }
+            ]
+        }
+    ],
+    "include": [],
+    "x-common": [
+        {
+            "type": "Website",
+            "url": "http:\/\/domaincountdown.verisignlabs.com\/public\/apidocs.html"
+        },
+        {
+            "type": "Crunchbase",
+            "url": "https:\/\/crunchbase.com\/organization\/verisign"
+        },
+        {
+            "type": "Email",
+            "url": "websales@verisign.com"
+        },
+        {
+            "type": "Email",
+            "url": "customerservice@verisign.com"
+        },
+        {
+            "type": "Email",
+            "url": "pr@verisign.com"
+        },
+        {
+            "type": "Email",
+            "url": "abuse@verisign.com"
+        },
+        {
+            "type": "Email",
+            "url": "legal@verisign.com"
+        },
+        {
+            "type": "Email",
+            "url": "privacystatement@verisign.com"
+        },
+        {
+            "type": "Email",
+            "url": "vidnsupport@verisign.com"
+        },
+        {
+            "type": "Email",
+            "url": "mdnshelp@verisign.com"
+        },
+        {
+            "type": "Email",
+            "url": "MakeYourMark@verisign.com"
+        },
+        {
+            "type": "Email",
+            "url": "dcpolicy@verisign.com"
+        },
+        {
+            "type": "Twitter",
+            "url": "https:\/\/twitter.com\/VERISIGN"
+        }
+    ]
+}
