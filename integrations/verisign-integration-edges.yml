@@ -1,0 +1,86 @@
+edges:
+- partner_name: ICANN (gTLD registry operator)
+  partner: null
+  partner_match: register
+  type: contract
+  channel: regulator-register
+  relationship: standard-participant
+  direction: partner-built
+  evidence: https://www.icann.org/resources/registries/gtlds/v2/gtlds.json
+  category: ICANN gTLD registry operator
+  contract_reference:
+    register: ICANN gTLD registry agreements (icann.org/resources/registries/gtlds/v2/gtlds.json)
+    standard: ICANN Registry Agreement
+    spec_file: null
+    role: icann-gtld-registry-operator
+    registered_name: VeriSign, Inc.
+    register_id: com
+    matched_domain: verisign.com
+    matched_by: domain
+    identity: wikidata Q734338 'Verisign' P856 https://www.verisign.com
+    identity_source: wikidata P856 (labelled provenance step; Kin 2026-10-15 decision 1)
+    gtlds:
+    - com
+    - comsec
+    - name
+    - net
+    - web
+    gtld_count_context: 5
+    signal_note: 'participation only: a registry agreement is a contract, not a conformance result; the number of
+      TLDs is breadth, context only, never counted; .BRAND (Specification 13) TLDs excluded'
+    detected_by: sweep-domains-dns.py
+    detected: '2026-10-18'
+  detected_by: sweep-domains-dns.py
+  first_seen: '2026-10-18'
+- partner_name: RDAP (IANA bootstrap / registrar ids)
+  partner: null
+  partner_match: register
+  type: register
+  channel: standard-directory
+  relationship: compatible
+  shape: rdap
+  degree: declared-unqualified
+  evidence_kind: iana-bootstrap
+  direction: partner-built
+  evidence: https://data.iana.org/rdap/dns.json
+  note: IANA lists an RDAP service run on this provider's domain; a published endpoint, not a conformance test.
+    REPORT ONLY (compatible edges are never in depth or position)
+  contract_reference:
+    register: IANA RDAP bootstrap (data.iana.org/rdap/dns.json) + IANA Registrar IDs
+    spec_file: null
+    role: rdap-registry
+    registered_name: VeriSign Sarl
+    register_id: cc
+    matched_domain: verisign.com
+    matched_by: domain
+    rdap_base_url: https://rdap.verisign.com/com/v1/
+    tlds:
+    - cc
+    - com
+    - comsec
+    - name
+    - net
+    - verisign
+    - web
+    - xn--11b4c3d
+    - xn--3pxu8k
+    - xn--42c2d9a
+    - xn--9dbq2a
+    - xn--c2br7g
+    signal_note: report only; TLD and accreditation counts are context, never counted
+    detected_by: sweep-domains-dns.py
+    detected: '2026-10-18'
+  detected_by: sweep-domains-dns.py
+  first_seen: '2026-10-18'
+generated: '2026-10-18'
+method: searched
+source:
+- https://www.icann.org/en/contracted-parties/accredited-registrars/list-of-accredited-registrars
+- https://www.icann.org/resources/registries/gtlds/v2/gtlds.json
+- https://data.iana.org/rdap/dns.json
+- https://www.iana.org/assignments/registrar-ids/registrar-ids.xml
+checked:
+- https://data.iana.org/rdap/dns.json
+- https://www.iana.org/assignments/registrar-ids/registrar-ids.xml
+- https://www.icann.org/en/contracted-parties/accredited-registrars/list-of-accredited-registrars
+- https://www.icann.org/resources/registries/gtlds/v2/gtlds.json
