@@ -72,6 +72,74 @@ edges:
     detected: '2026-10-18'
   detected_by: sweep-domains-dns.py
   first_seen: '2026-10-18'
+- partner_name: PeeringDB (interconnection register)
+  partner: null
+  partner_match: register
+  type: register
+  channel: standard-directory
+  relationship: standard-participant
+  direction: partner-built
+  evidence: https://www.peeringdb.com/net/873
+  category: network interconnection register
+  contract_reference:
+    register: PeeringDB (peeringdb.com/api net, ix, fac, org)
+    standard: null
+    spec_file: null
+    role: peeringdb-network
+    registered_name: Verisign
+    register_id: https://www.peeringdb.com/net/873
+    matched_domain: verisign.com
+    matched_by: domain
+    asns:
+    - 7342
+    - 26415
+    info_types:
+    - NSP
+    ix_presence: 68
+    exchanges_operated: []
+    facilities_operated: 0
+    signal_note: 'participation only: PeeringDB is self-registered by network operators; ASNs, IX presence and facility
+      counts are context, never counted'
+    detected_by: sweep-network-edge.py
+    detected: '2026-10-20'
+  detected_by: sweep-network-edge.py
+  first_seen: '2026-10-20'
+- partner_name: MANRS (Mutually Agreed Norms for Routing Security)
+  partner: null
+  partner_match: register
+  type: register
+  channel: standard-directory
+  relationship: standard-participant
+  direction: partner-built
+  evidence: https://manrs.org/participant/019eccd4-bc0f-7c13-9834-4655c069ebfc
+  category: routing-security programme
+  contract_reference:
+    register: MANRS participants (manrs.org netops / cdn-cloud-providers / ixps / equipment-vendors)
+    standard: MANRS
+    spec_file: null
+    role: manrs-participant
+    registered_name: Verisign
+    register_id: https://manrs.org/participant/019eccd4-bc0f-7c13-9834-4655c069ebfc
+    matched_domain: verisign.com
+    matched_by: domain
+    domain_source: peeringdb net website for AS7342
+    certified_products:
+    - product: MANRS CDN and Cloud Providers
+      program: cdn-cloud-providers
+      lapsed: false
+      approved: '2020-06-24'
+    - product: MANRS Network Operators
+      program: netops
+      lapsed: false
+      approved: '2018-08-25'
+    signal_note: certified_products = one entry per MANRS programme admitted to (reviewed against the programme's
+      actions), never per ASN; ASNs are context. The tables list current participants only, so lapsed is always
+      false
+    detected_by: sweep-network-edge.py
+    detected: '2026-10-20'
+    identity_source: peeringdb net website by the participant's ASN (labelled provenance step)
+  detected_by: sweep-network-edge.py
+  first_seen: '2026-10-20'
 generated: '2026-10-18'
 method: searched
 source:
@@ -84,3 +152,7 @@ checked:
 - https://www.iana.org/assignments/registrar-ids/registrar-ids.xml
 - https://www.icann.org/en/contracted-parties/accredited-registrars/list-of-accredited-registrars
 - https://www.icann.org/resources/registries/gtlds/v2/gtlds.json
+- https://manrs.org/netops/participants/
+- https://www.peeringdb.com/api/fac
+- https://www.peeringdb.com/api/ix
+- https://www.peeringdb.com/api/net
